@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "DD-WRT server",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Dorgalam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
