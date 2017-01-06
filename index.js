@@ -3,6 +3,15 @@ var app = express();
 var request = require('request');
 var parseString = require('xml2js').parseString;
 
+var sys = require('sys')
+var exec = require('child_process').exec;
+
+app.post('/payload', function(req, res) {
+  function puts(error, stdout, stderr) { sys.puts(stdout) }
+  exec("sh /mnt/sda4/Scripts/pull.sh", puts);
+});
+
+
 app.get('/rss', function(req, res) {
   var sessionId;
   var options = {
