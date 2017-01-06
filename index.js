@@ -13,7 +13,7 @@ app.post('/payload', function(req, res) {
 });
 
 app.get("/test", function(req, res) {
-  res.send("another test");
+  res.send("perhaps now?");
 })
 
 app.get('/rss', function(req, res) {
