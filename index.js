@@ -3,7 +3,7 @@ var app = express();
 var request = require('request');
 var parseString = require('xml2js').parseString;
 
-var sys = require('sys')
+var sys = require('util')
 var exec = require('child_process').exec;
 
 app.post('/payload', function(req, res) {
